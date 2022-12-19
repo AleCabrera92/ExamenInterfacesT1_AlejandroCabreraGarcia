@@ -100,30 +100,38 @@
 
         <div class="modal-content animate">
 
-            <div id="cabecera">
+            <div id="cabeceraModal">
                 <h1>Nuevo cliente</h1>
             </div>
 
             <div class="container">
 
-                <label for="uname"><b>Nombre:</b></label>
-                <input type="text" class="user" placeholder="" name="uname" required>
+                <div class="campo">
+                    <label for="uname"><b>Nombre:</b></label>
+                    <input type="text" class="user" placeholder="" name="uname" required>
+                </div>
 
-                <label for="edad"><b>Edad:</b></label>
-                <input type="text" class="edad" placeholder="" name="edad" required>
+                <div class="campo">
+                    <label for="edad"><b>Edad:</b></label>
+                    <input type="text" class="edad" placeholder="" name="edad" required>
+                </div>
 
-                <label for="altura"><b>Altura (cm):</b></label>
-                <input type="text" class="altura" placeholder="" name="altura" required>
+                <div class="campo">
+                    <label for="altura"><b>Altura (cm):</b></label>
+                    <input type="text" class="altura" placeholder="" name="altura" required>
+                </div>
 
-                <label for="peso"><b>Peso (kg):</b></label>
-                <input type="text" class="peso" placeholder="" name="peso" required>
+                <div class="campo">
+                    <label for="peso"><b>Peso (kg):</b></label>
+                    <input type="text" class="peso" placeholder="" name="peso" required>
+                </div>
 
             </div>
 
-            <div id="footer">
+            <div id="footerModal">
                 <!-- <button type="submit" class="enter">Iniciar sesión</button> -->
                 <button type="submit" class="enter" id="buttonSubmit">Añadir nuevo</button>
-                <button type="button" class="enter" id="buttonAtras">Volver atrás</button>
+                <button type="button" id="buttonAtras" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Volver atrás</button>
             </div>
 
         </div>   

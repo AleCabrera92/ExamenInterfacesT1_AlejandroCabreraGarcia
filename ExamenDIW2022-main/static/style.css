@@ -11,40 +11,47 @@ body {
   }
 
 #cabecera {
-
     background-color: lightgray;
     width: 100%;
     text-align: center;
     font-family: 'Fredoka One', sans-serif !important;
-
   }
 
 #footer {
-
     background-color: lightgray;
     width: 100%;
     text-align: center;
     font-family: 'Fredoka One', sans-serif !important;
+}
 
+#cabeceraModal {
+    background-color: lightgray;
+    width: 100%;
+    text-align: center;
+    font-family: 'Fredoka One', sans-serif !important;
+  }
+
+#footerModal {
+    background-color: lightgray;
+    width: 100%;
+    text-align: center;
+    font-family: 'Fredoka One', sans-serif !important;
 }
 
 #overtab {
     background-color: white;
-
     position: absolute;
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
-
     margin: auto;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border: 1px solid black;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     max-width: fit-content;
     max-height: fit-content;
 }
@@ -58,6 +65,7 @@ background-color: white;
 border-collapse: collapse !important;
 overflow-x: auto;
 white-space: nowrap;
+margin: 10px;
 }
 
 #data_table th, td {
@@ -88,83 +96,46 @@ button {
     border: none;
     cursor: pointer;
     float: none;
-  }
+}
   
-  #buttonLogin {
+#buttonLogin {
     border-radius: 10px;
     background-color: green;
     padding: 0.5rem 2rem;
-  }
+}
 
-  #buttonSubmit {
+#buttonSubmit {
     border-radius: 10px;
     background-color: green;
     padding: 0.5rem 2rem;
-  }
+    margin: 0.5rem 2rem;
+}
 
-  #buttonAtras {
+#buttonAtras {
     border-radius: 10px;
     background-color: gray;
     padding: 0.5rem 2rem;
-  }
+    margin: 0.5rem 2rem;
+}
   
-  .buttonVisitDiv {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  
-  #buttonVisit {
-    border: 5px solid rgb(173, 52, 52);
-    border-radius: 50px;
-    width: 50%;
-    font-size: large;
-    font-weight: bold;
-  }
-  
-  #buttonVisitContact {
-    border: 3px solid rgb(173, 52, 52);
-    border-radius: 50px;
-    width: 50%;
-    float: left;
-  }
-  
-  #buttonVisit:hover {
-    opacity: 1;
-    background-color: #e24040;
-  }
-  
-  button:hover {
+button:hover {
     opacity: 0.8;
-  }
-  
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-  }
-  
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-  }
-  
-  img.avatar {
-    width: 20%;
-    border-radius: 50%;
-  }
-  
-  .container {
+}
+ 
+.container {
     padding: 16px;
-  }
+    display: flexbox;
+}
+
+.campo {
+    padding: 0.5rem;
+}
+
+.campo input {
+    width: 8rem;
+}
   
-  span.psw {
-    float: right;
-    padding-top: 16px;
-  }
-  
-  .modal {
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -176,50 +147,26 @@ button {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
     padding-top: 60px;  
-  }
+}
   
-  .modal-content {
+.modal-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto;
     border: 1px solid #888;
-    width: 80%;
-  }
+    max-width: fit-content;
+}
   
-  .close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .close:hover, .close:focus {
-    color: red;
-    cursor: pointer;
-  }
-  
-  .animate {
+.animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
-  }
+}
   
-  @-webkit-keyframes animatezoom {
+@-webkit-keyframes animatezoom {
     from {-webkit-transform: scale(0)} 
     to {-webkit-transform: scale(1)}
-  }
+}
     
-  @keyframes animatezoom {
+@keyframes animatezoom {
     from {transform: scale(0)} 
     to {transform: scale(1)}
-  }
-  
-  @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-  }
+}
