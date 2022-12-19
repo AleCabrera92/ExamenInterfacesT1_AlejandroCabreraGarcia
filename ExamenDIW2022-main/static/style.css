@@ -90,7 +90,7 @@ font-size: 16px;
 font-family: 'Arial', sans-serif !important;
 }
 
-#data_table td:hover {
+#data_table tr:hover {
     background-color: orange;
     border-collapse: collapse !important;
     overflow-x: auto;
