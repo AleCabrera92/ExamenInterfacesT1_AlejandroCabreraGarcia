@@ -1,0 +1,225 @@
+/*# sourceMappingURL=style.css.map */
+/* Alejandro Cabrera García */
+
+body {
+    background-image: linear-gradient(to bottom right, black, orange, grey, white);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+#cabecera {
+
+    background-color: lightgray;
+    width: 100%;
+    text-align: center;
+    font-family: 'Fredoka One', sans-serif !important;
+
+  }
+
+#footer {
+
+    background-color: lightgray;
+    width: 100%;
+    text-align: center;
+    font-family: 'Fredoka One', sans-serif !important;
+
+}
+
+#overtab {
+    background-color: white;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+#wrapper {
+    background-color: white;
+}
+
+#data_table {
+background-color: white;
+border-collapse: collapse !important;
+overflow-x: auto;
+white-space: nowrap;
+}
+
+#data_table th, td {
+border: 2px solid orange;
+}
+
+#data_table td, th {
+padding: 10px;
+}
+
+#data_table th {
+background-color: orange;
+font-family: 'Fredoka One', sans-serif !important;
+}
+
+th {
+font-size: 16px;
+}
+
+#data_table td {
+font-size: 16px;
+font-family: 'Arial', sans-serif !important;
+}
+
+button {
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    float: none;
+  }
+  
+  #buttonLogin {
+    border-radius: 10px;
+    background-color: green;
+    padding: 0.5rem 2rem;
+  }
+
+  #buttonSubmit {
+    border-radius: 10px;
+    background-color: green;
+    padding: 0.5rem 2rem;
+  }
+
+  #buttonAtras {
+    border-radius: 10px;
+    background-color: gray;
+    padding: 0.5rem 2rem;
+  }
+  
+  .buttonVisitDiv {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  #buttonVisit {
+    border: 5px solid rgb(173, 52, 52);
+    border-radius: 50px;
+    width: 50%;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  #buttonVisitContact {
+    border: 3px solid rgb(173, 52, 52);
+    border-radius: 50px;
+    width: 50%;
+    float: left;
+  }
+  
+  #buttonVisit:hover {
+    opacity: 1;
+    background-color: #e24040;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 20%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;  
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
