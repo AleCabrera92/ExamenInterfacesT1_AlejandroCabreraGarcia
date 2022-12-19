@@ -90,6 +90,14 @@ font-size: 16px;
 font-family: 'Arial', sans-serif !important;
 }
 
+#data_table td:hover {
+    background-color: orange;
+    border-collapse: collapse !important;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 10px;
+}
+
 button {
     color: white;
     margin: 8px 0;
